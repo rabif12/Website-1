@@ -1,0 +1,39 @@
+@import './presets';
+@import './variables';
+
+
+
+body{
+    background-color: $main-color;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 100vh;
+    width: 100vw;
+    .header{
+        padding: 100px 0 200px 0;
+        font-size: 5rem;
+
+    }
+    .under-construction-model-svg{
+        height: 80%;
+        svg{
+            height: 60vh;
+            width: auto;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    svg{
+        height: 200px;
+        width: auto;
+    }
+    .header{
+        font-size: 2.5rem;
+        background-color: blue;
+    }
+}
